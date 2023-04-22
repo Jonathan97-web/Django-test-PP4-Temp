@@ -32,7 +32,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = ['https://*.codeanyapp.com/, http://*.codeanyapp.com/']
+CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io/, http://*.gitpod.io/']
 
 
 # Application definition
@@ -90,8 +90,8 @@ WSGI_APPLICATION = 'my_portfolio.wsgi.application'
 
 DATABASES = {
         'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'myportfolio-pp4',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres',
         'USER': 'Jonathan97web',
         'PASSWORD': os.environ.get("DATABASE_PASSWORD"),
         'HOST': 'myportfolio-pp4.c1wllcazyk4p.eu-north-1.rds.amazonaws.com',

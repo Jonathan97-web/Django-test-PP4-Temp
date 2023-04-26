@@ -94,7 +94,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'Jonathan97web',
         'PASSWORD': os.environ.get("DATABASE_PASSWORD"),
-        'HOST': 'myportfolio-pp4.c1wllcazyk4p.eu-north-1.rds.amazonaws.com',
+        'HOST': os.environ.get("DATABASE_HOST"),
         'PORT': '5432',
     }
   }

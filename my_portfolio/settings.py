@@ -32,7 +32,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io/, http://*.gitpod.io/']
+CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io/, http://*.gitpod.io/, http://*.herokuapp.com/, https://*.herokuapp.com/']
 
 
 # Application definition
